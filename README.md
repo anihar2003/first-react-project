@@ -1,54 +1,57 @@
-<<<<<<< HEAD
-# React + TypeScript + Vite
+Social Media App
+A React-based social media platform that allows users to create, edit, delete, and like posts. Users can also view posts made by others. The app is integrated with Firebase for real-time database functionality and user authentication using Gmail credentials.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Features
+Create, Edit, Delete Posts: Users can create new posts, edit their existing posts, or delete them.
+Like Posts: Like functionality for posts made by users.
+View Others' Posts: Users can view posts created by other users in real-time.
+Firebase Integration: Real-time data updates using Firebase Firestore.
+Gmail Authentication: Users can sign up and log in using their Gmail accounts via Firebase Authentication.
 
-Currently, two official plugins are available:
+Technologies Used
+Frontend: React, Vite, TypeScript
+Backend: Firebase Firestore (Database), Firebase Authentication (Login with Gmail)
+Hosting: Firebase Hosting
+Styling: CSS (or any library you're using)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Installation
 
-## Expanding the ESLint configuration
+Clone the repository:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+```bash
+git clone https://github.com/anihar2003/first-react-project.git
+cd first-react-project
+```
+Install dependencies:
 
-- Configure the top-level `parserOptions` property like this:
+```bash
+npm install
+```
+Set up Firebase:
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+Go to the Firebase Console.
+Create a new project.
+Enable Firestore Database and Firebase Authentication (Google Sign-In).
+Get your Firebase config and add it to the firebaseConfig in your project.
+Run the app:
+
+```bash
+npm run dev
+```
+Deploy to Firebase (optional):
+
+```bash
+firebase deploy
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+Firebase Setup
+Create a Firebase project in the Firebase console.
+Enable Firestore for real-time data storage.
+Set up Firebase Authentication for Gmail login.
+Use the provided Firebase configuration in your project.
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
-=======
-# first-react-project
->>>>>>> f9316f283a7b02e3d9fe38aa2b208e3385c70ffc
+Usage
+Create an account or sign in with your Gmail credentials.
+Create a new post by typing in the post editor and clicking "Post".
+Edit or delete your existing posts by clicking the appropriate buttons.
+Like posts by other users by clicking the "Like" button.
