@@ -3,11 +3,14 @@ import {auth} from '../config/firebase'
 import {useAuthState} from 'react-firebase-hooks/auth'
 import userPlaceholder from '../assets/images/user.png';
 import {signOut} from 'firebase/auth';
+import { useNavigate } from 'react-router-dom';
 
 export const Navbar = () => {
     const [user] =useAuthState(auth);
+    const navigate = useNavigate();
     const usersignout= async ()=>{
         await signOut(auth);
+        navigate('/login');
     }
     return <div className='navbar'>
         <Link to="/">Home</Link>
