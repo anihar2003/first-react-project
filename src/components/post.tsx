@@ -2,6 +2,9 @@ import { auth, db } from "../config/firebase";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { addDoc, collection, query, where, getDocs, deleteDoc } from "firebase/firestore";
 import { useState, useEffect } from "react";
+import likedIcon from '/src/assets/images/liked.svg';
+import likeIcon from '/src/assets/images/like.svg';
+
 
 interface PostProps {
     username: string;
@@ -62,9 +65,14 @@ export const Post = (props: PostProps) => {
             <h2 className='post-title'>{props.title}</h2>
             <p className='post-description'>{props.description}</p>
             <button className='like-button' onClick={Liketoggle}>
-                {Likes.some((like) => like.userId === user?.uid) ? "🩷" : "💟"}
+                <img 
+                    src={Likes.some((like) => like.userId === user?.uid) ? likedIcon : likeIcon} 
+                    alt={Likes.some((like) => like.userId === user?.uid) ? 'Unlike' : 'Like'}
+                    width="24" 
+                    height="24" 
+                />
             </button>
-            <p className='like-count'>Likes: {noOfLikes}</p>
+            <a className='like-count'>{noOfLikes}</a>
         </div>
     );
 };

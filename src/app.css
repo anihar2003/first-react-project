@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* Navbar container */
@@ -25,10 +26,13 @@
     font-size: 1.5rem;
     font-weight: bold;
     transition: color 0.3s ease;
+    border-radius: 50px;
+    background-color: #2d3747;
+    padding: 10px;
 }
 
 .navbar a:hover {
-    background-color: #2d3747;
+    background-color: #2d37478e;
 }
 
 /* Links and buttons */
@@ -50,7 +54,7 @@
 }
 
 .links a:hover, .links button:hover {
-    background-color: #1abc9c;
+    background-color: #2d3747;
 }
 
 button {
@@ -311,8 +315,10 @@ button {
     background-color: transparent; /* Transparent background */
     border: none; /* Remove border */
     cursor: pointer; /* Pointer cursor on hover */
-    font-size: 1.5em; /* Larger icon size */
     transition: color 0.2s; /* Smooth color transition */
+    width: 5px;
+    height: 5px;
+    transform: translateY(5px);
 }
 
 .like-button:hover {
@@ -322,6 +328,7 @@ button {
 .like-count {
     font-size: 1em; /* Normal font size for like count */
     color: #555; /* Darker gray for like count */
+    padding-left: 10px;
 }
 /* MyPosts.css */
 .container {
