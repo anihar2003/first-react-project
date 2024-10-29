@@ -44,7 +44,7 @@ Deploy to Firebase (optional):
 firebase deploy
 ```
 
-Firebase Setup
+Firebase Setup:
 Create a Firebase project in the Firebase console.
 Enable Firestore for real-time data storage.
 Set up Firebase Authentication for Gmail login.
