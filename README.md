@@ -8,13 +8,13 @@ View Others' Posts: Users can view posts created by other users in real-time.
 Firebase Integration: Real-time data updates using Firebase Firestore.
 Gmail Authentication: Users can sign up and log in using their Gmail accounts via Firebase Authentication.
 
-Technologies Used
+Technologies Used:
 Frontend: React, Vite, TypeScript
 Backend: Firebase Firestore (Database), Firebase Authentication (Login with Gmail)
 Hosting: Firebase Hosting
 Styling: CSS (or any library you're using)
 
-Installation
+Installation:
 
 Clone the repository:
 
