@@ -12,7 +12,7 @@ Technologies Used:
 Frontend: React, Vite, TypeScript
 Backend: Firebase Firestore (Database), Firebase Authentication (Login with Gmail)
 Hosting: Firebase Hosting
-Styling: CSS (or any library you're using)
+Styling: CSS
 
 Installation:
 
