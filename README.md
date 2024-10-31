@@ -9,7 +9,7 @@ Firebase Integration: Real-time data updates using Firebase Firestore.
 Gmail Authentication: Users can sign up and log in using their Gmail accounts via Firebase Authentication.
 
 Technologies Used:
-Frontend: React,TypeScript
+Frontend: React + Vite, TypeScript
 Backend: Firebase Firestore (Database), Firebase Authentication (Login with Gmail)
 Hosting: Firebase Hosting
 Styling: CSS
