@@ -16,12 +16,7 @@ Styling: CSS
 
 Installation:
 
-Clone the repository:
-
-```bash
-git clone https://github.com/anihar2003/first-react-project.git
-cd first-react-project
-```
+Clone the repository
 Install dependencies:
 
 ```bash
